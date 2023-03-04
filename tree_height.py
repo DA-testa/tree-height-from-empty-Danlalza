@@ -31,7 +31,7 @@ def main():
         if 'a' in filename:
             print("Invalid filename")
             exit()
-        filename = "tree-height-from-empty-Danlalza/test/" + filename
+        filename = "tree-height-from-empty-Danlalza/test/" + filename + "_"
         with open(filename, 'r') as file:
             n = int(file.readline().strip())
             parents = [int(x) for x in file.readline().strip().split()]
