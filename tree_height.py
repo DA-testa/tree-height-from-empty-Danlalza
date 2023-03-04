@@ -21,14 +21,13 @@ def compute_height(n, parents):
     return max_height
 
 def main():
-    text = str(input())
-    if "I" in text:
-        n = int(input())
-        parents = []
-        parents = [int(x) for x in input().split()]
-        height = compute_height(n, parents)
-        print(height)
-        sys.exit()
+    n = int(input())
+    parents = []
+    parents = [int(x) for x in input().split()]
+    height = compute_height(n, parents)
+    print(height)
+    sys.exit()
+    ***
     elif "F" in text:
         filename = str(input())
         if 'a' in filename.lower():
@@ -39,6 +38,7 @@ def main():
             parents = [int(x) for x in file.readline().strip().split()]
         height = compute_height(n, parents)
         print(height)
+    ***
 
 # In Python, the default limit on recursion depth is rather low,
 # so raise it here for this problem. Note that to take advantage
